@@ -13,7 +13,10 @@ public final class VideoConstant {
 
 	public static final String DURATION_COMMAND = "ffprobe -i %s -sexagesimal -show_entries format=duration -v quiet -of csv='p=0'";
 	public static final String CLIP_FILE_NAME = "%s_%s.%s";
-	public static final String FFMPEG_OUTPUT_COMMAND = "ffmpeg -y -i %s -ss %s -t %s -async 1 -strict -2 %s%s";
+	// old command
+	// public static final String FFMPEG_OUTPUT_COMMAND = "ffmpeg -y -i %s -ss %s -t %s -async 1 -strict -2 %s%s";
+	//new command
+	public static final String FFMPEG_OUTPUT_COMMAND = "ffmpeg -y -i %s -ss %s -t %s %s%s";
 	public static final String SHELL = "bash";
 	public static final String SHELL_COMMAND_STRING_ARGUMENT = "-c";
 
